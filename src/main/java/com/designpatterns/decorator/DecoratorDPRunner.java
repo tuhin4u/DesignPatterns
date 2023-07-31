@@ -1,6 +1,7 @@
 package com.designpatterns.decorator;
 
-public class DecoratorDPRunner {
+public class
+DecoratorDPRunner {
     public static void main(String[] args) {
         Car sportcar=new SportsCar(new BasicCar());
         sportcar.assemble();
