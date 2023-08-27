@@ -11,10 +11,10 @@ class BaseCarImpl implements ICar{
     }
 }
 
-class CarDecorator2 implements ICar{
+class CarDecorator implements ICar{
     ICar car;
 
-    public CarDecorator2(ICar car) {
+    public CarDecorator(ICar car) {
         this.car = car;
     }
 
@@ -23,7 +23,7 @@ class CarDecorator2 implements ICar{
         this.car.assemble();
     }
 }
-class ElectricCar extends CarDecorator2{
+class ElectricCar extends CarDecorator{
 
     public ElectricCar(ICar car) {
         super(car);
